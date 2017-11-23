@@ -2,13 +2,13 @@
 
 ### Dependencies for ARCH Linux : 
 ```
-* `xelatex`  
-* `texlive-most`  
-* `texlive-fontsextra` 
-* `texlive-langextra`
+* xelatex
+* texlive-most  
+* texlive-fontsextra 
+* texlive-langextra
 ```
 
-###
+Can be compiled using :
 ```shell
 $ xelatex cv.tex
 ```
