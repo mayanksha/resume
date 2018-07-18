@@ -1,6 +1,6 @@
 %!TEX TS-program = xelatex
 %!TEX encoding = UTF-8 Unicode
- %Awesome CV LaTeX Template for CV/Resume
+%Awesome CV LaTeX Template for CV/Resume
 
  %This template has been downloaded from:
  %https://github.com/posquit0/Awesome-CV
@@ -38,15 +38,37 @@
 % If you would like to change the social information separator from a pipe (|) to something else
 \renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
 
+% The external link icon
+\newcommand{\ExternalLink}{%
+    \tikz[x=1.2ex, y=1.2ex, baseline=-0.05ex]{% 
+        \begin{scope}[x=1ex, y=1ex]
+            \clip (-0.1,-0.1) 
+                --++ (-0, 1.2) 
+                --++ (0.6, 0) 
+                --++ (0, -0.6) 
+                --++ (0.6, 0) 
+                --++ (0, -1);
+            \path[draw, 
+                line width = 0.5, 
+                rounded corners=0.5] 
+                (0,0) rectangle (1,1);
+        \end{scope}
+        \path[draw, line width = 0.5] (0.5, 0.5) 
+            -- (1, 1);
+        \path[draw, line width = 0.5] (0.6, 1) 
+            -- (1, 1) -- (1, 0.6);
+        }
+    }
 
 % Available options: circle|rectangle,edge/noedge,left/right
 % \photo{./profile.png}
 \name{Mayank}{Sharma}
-\position{ Undergraduate{\enskip\cdotp\enskip}Computer Science and Engineering}
+\position{Undergraduate{\enskip\cdotp\enskip}Computer Science and Engineering}
 \address{Indian Institute of Technology, Kanpur}
 \mobile{(+91) 9461240034}
-\email{msharma@iitk.ac.in \quad\textbar\quad mayank8019@gmail.com}
-\homepage{mayanksha.me}
+\email{msharma@iitk.ac.in}
+\email{mayank8019@gmail.com}
+\homepage{msharma.me}
 \github{mayanksha}
 \linkedin{mayanksha}
 
@@ -59,15 +81,14 @@
 
 \input{sections/education.tex}
 \input{sections/academic.tex}
+\input{sections/experience.tex}
 \input{sections/project.tex}
 \input{sections/coursework.tex}
 \input{sections/skills.tex}
 \input{sections/positions.tex}
-\pagebreak
 \input{sections/interests.tex}
 \input{sections/self.tex}
 \input{sections/hobbies.tex}
-
 
 \end{document}
 
