@@ -1,0 +1,239 @@
+%-------------------------
+% Resume in Latex
+% Author : Mayank Sharma 
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage{xcolor}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+	\vspace{-4pt}
+	\scshape\raggedright\large
+}
+{}{0pt}{}[\color{gray}\titlerule \vspace{-5pt}]
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+\item\small{
+		\textbf{#1}{: #2 \vspace{-2pt}}
+	}
+}
+
+\newcommand{\resumeSubheading}[4]{
+	\vspace{-1pt}\item
+	\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{\small#3} & \textit{\small #4} \\
+	\end{tabular*}\vspace{-10pt}
+}
+
+\newcommand{\ExternalLink}{%
+    \tikz[x=1.2ex, y=1.2ex, baseline=-0.05ex]{% 
+        \begin{scope}[x=1ex, y=1ex]
+            \clip (-0.1,-0.1) 
+                --++ (-0, 1.2) 
+                --++ (0.6, 0) 
+                --++ (0, -0.6) 
+                --++ (0.6, 0) 
+                --++ (0, -1);
+            \path[draw, 
+                line width = 0.5, 
+                rounded corners=0.5] 
+                (0,0) rectangle (1,1);
+        \end{scope}
+        \path[draw, line width = 0.5] (0.5, 0.5) 
+            -- (1, 1);
+        \path[draw, line width = 0.5] (0.6, 1) 
+            -- (1, 1) -- (1, 0.6);
+        }
+    }
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+	\textbf{\href{https://msharma.me/}{\huge Mayank Sharma}} & Email : \href{mailto:mayank8019@gmail.com}{mayank8019@gmail.com}\vspace{3pt}\\
+	Third Year Undergraduate & Mobile : +91-9461240034 \\
+	Computer Science \& Engineering & H-303/5, IIT Kanpur \\
+\end{tabular*}
+\vspace{-8pt}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+\resumeSubHeadingListStart
+\resumeSubheading
+{Indian Institute of Technology, Kanpur}{Kanpur, India}
+{B.Tech in Computer Science \& Engineering; \textbf{CGPA 6.53/10.0}}{July 2016 -- present}
+\resumeSubheading
+{Children Senior Secondary School, Dadabari, Kota (Raj.)}{Kota, Rajasthan}
+{AISSCE Class XII; \textbf{92.0\%}}{2016}
+\resumeSubheading
+{Central Academy Sr. Sec. School}{Chittorgarh, Rajasthan}
+{CBSE Class X; \textbf{CGPA 10.0/10.0}}{2014}
+\resumeSubHeadingListEnd
+\vspace{-5pt}
+
+%-----------KEY SCHOLASTIC ACHIEVEMENTS-----------------
+\section{Key Scholastic Achievements}
+\begin{itemize}[noitemsep]
+\item \textbf{All India Rank 630} in JEE Advanced 2016 among 200 thousand selected candidates.
+\item \textbf{All India Rank 2237} in JEE Main 2016 among 1.2 million candidates.
+\item \textbf{All India Rank 854}, KVPY Fellowship Award awarded by Department of Science and Technology, India.
+\item Awarded \textbf{Certificate of Merit} for being in \textbf{State Top 1-Percent} in Nation Standard Examination in Physics (NSEP).\vspace*{-8pt}
+\end{itemize}
+
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+\resumeSubHeadingListStart
+
+\resumeSubheading
+{Software Developer Intern, EarlySalary}{Pune, India}
+{Pickup System Case Allocation Automation (Mentor: Vivek Jain)}{May 2018 - July 2018}
+\vspace{4pt}
+\begin{itemize}
+	\itemsep1pt
+		\item[$\circ$] Worked on the backend of a scalable web app, and helped migration from existing PHP based system.
+		\item[$\circ$] Implemented centralized Authentication \& Authorization using \textbf{Jumpcloud’s Directory-as-a-Service}.
+		\item[$\circ$] Helped design APIs and Algorithms, to retrieve a new case and automatically assign to a Pickup Agency based upon its priority in a cluster, as soon as a new case is added.
+		\item[$\circ$] Developed Microservices for Lambda based REST APIs, deloyed them on Lambda using Claudia.js, and Prevented XSS into the existing MySQL Databases.
+		\item[$\circ$] \textbf{Techonologies Used}: Express.Js with Node.Js, Typescript, Redis (as session store), MySQL,
+			LDAP, AWS Lambda Services.\vspace*{-8pt}
+	\end{itemize}
+\resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeSubItem{Cable Braiding Machine, IIT Kanpur}
+{Worked on a gear-driven Cable Braiding Machine to braid multiple threads simultaneously; Part of a Course Project (TA-202)}
+\resumeSubItem{The Automatic Stamper, IIT Kanpur}
+{Worked on an Automatic Stamper, which when connected to a motor could stamp four times in one revolution; Part of a Course Project (TA-201)}
+\resumeSubHeadingListEnd
+
+%-----------POR-----------------
+\section{Positions of Responsibility}
+\begin{itemize}[noitemsep]
+    \setlist{nolistsep}
+	\item \textbf{Head, Web Development, Entrepreneurship Cell, IIT Kanpur}	
+		\hfill \textit{(April ‘18 - present)}
+		\begin{itemize}
+			\item Spearheading a team of 10+ Senior Web Developer Executives,	
+				effectively distributing development work and collaborating in a Git Organization.
+			\item Developed Campus Ambassador and Events Registration Portals. (MEAN Stack)
+		\end{itemize}
+
+	\item \textbf{Webmaster, Hall 5, IIT Kanpur}
+		\hfill \textit{(November ‘17 - present)}
+		\begin{itemize}
+			\item Redesigned and revamped the webpage of Hall 5, IIT Kanpur.\vspace*{-8pt}
+		\end{itemize}
+
+\end{itemize}\vspace*{-6pt}
+
+\section{Technical Skills}
+\begin{itemize}[noitemsep]
+	\item
+		\textbf{Programming : }
+		 Javascript and Typescript (\textit{Proficient}), C++, Python, C, Bash Scripting, MATLAB
+	\item
+		\textbf{Web : }
+		Express.js with Node.js \textit{(Fluent)}, Angular 4, MongoDB (Mongoose), AWS Lambda \& EC2
+
+	\item
+	\textbf{Databases \& Utilities : }
+		MySQL, Redis, LDAP, Git, \LaTeX, Vim, AutoCAD
+	\item
+		\textbf{Operating Systems : }
+		Linux (Arch, Ubuntu \& LFS), Windows
+\vspace*{-5pt}
+
+\end{itemize}
+\vspace*{-8pt}
+\section{Relevant Courses}
+{\fontsize{10pt}{1em}\bodyfontlight\upshape\color{text}
+	\begin{tabular*}{\textwidth}{l l l}
+		Data Structures \& Algorithms 
+		& \hspace{6em} Intro. to Machine Learning ($i$) 
+		& \hspace{6em} Computer Networks ($i$)
+		\\
+		Operating Systems ($i$)
+		&\hspace{6em} Algorithms 2 ($i$)
+		&\hspace{6em} Theory Of Computation ($i$)
+		\\
+		Introduction to Programming &\hspace{6em} 
+		Discrete Mathematics   &\hspace{6em} 
+		Logic in Computer Science  \vspace{0pt}
+	\end{tabular*}
+}
+\hspace*{\fill} 
+		& $i$: In progress\\
+
+\vspace{-0.6cm}
+\section{Extracurriculars}
+\begin{itemize}
+	  \item \fontsize{10pt}{1em}A fitness enthusiast, who likes to lead an active lifestyle, regularly hitting the gym and \textbf{lost 20 Kgs weight} in the first year. 
+	  \item Part of School Basketball Team playing at District Level, winning accolades for the team.
+\end{itemize}
+
+%
+%--------PROGRAMMING SKILLS------------
+%\section{Programming Skills}
+%  \resumeSubHeadingListStart
+%    \item{
+%      \textbf{Languages}{: Scala, Python, Javascript, C++, SQL, Java}
+%      \hfill
+%      \textbf{Technologies}{: AWS, Play, React, Kafka, GCE}
+%    }
+%  \resumeSubHeadingListEnd
+
+
+%-------------------------------------------
+\end{document}

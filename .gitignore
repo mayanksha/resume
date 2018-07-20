@@ -1,5 +1,8 @@
-cv.fls
-cv.log
-cv.xdv
-cv.fdb_latexmk
+*.fls
+*.log
+*.xdv
+*.fdb_latexmk
 *.swp
+*.aux
+*.out
+*.dvi
