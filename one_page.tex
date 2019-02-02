@@ -4,7 +4,7 @@
 % License : MIT
 %------------------------
 
-\documentclass[letterpaper,10pt]{article}
+\documentclass[a4paper,20pt]{article}
 
 \usepackage{latexsym}
 \usepackage[empty]{fullpage}
@@ -29,7 +29,7 @@
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
+\addtolength{\topmargin}{-.3in}
 \addtolength{\textheight}{1.0in}
 
 \urlstyle{same}
@@ -40,7 +40,7 @@
 
 % Sections formatting
 \titleformat{\section}{
-	\vspace{-4pt}
+	\vspace{3pt}
 	\scshape\raggedright\large
 }
 {}{0pt}{}[\color{gray}\titlerule \vspace{-5pt}]
@@ -62,25 +62,25 @@
 }
 
 \newcommand{\ExternalLink}{%
-    \tikz[x=1.2ex, y=1.2ex, baseline=-0.05ex]{% 
-        \begin{scope}[x=1ex, y=1ex]
-            \clip (-0.1,-0.1) 
-                --++ (-0, 1.2) 
-                --++ (0.6, 0) 
-                --++ (0, -0.6) 
-                --++ (0.6, 0) 
-                --++ (0, -1);
-            \path[draw, 
-                line width = 0.5, 
-                rounded corners=0.5] 
-                (0,0) rectangle (1,1);
-        \end{scope}
-        \path[draw, line width = 0.5] (0.5, 0.5) 
-            -- (1, 1);
-        \path[draw, line width = 0.5] (0.6, 1) 
-            -- (1, 1) -- (1, 0.6);
-        }
-    }
+	\tikz[x=1.2ex, y=1.2ex, baseline=-0.05ex]{% 
+		\begin{scope}[x=1ex, y=1ex]
+			\clip (-0.1,-0.1) 
+			--++ (-0, 1.2) 
+			--++ (0.6, 0) 
+			--++ (0, -0.6) 
+			--++ (0.6, 0) 
+			--++ (0, -1);
+			\path[draw, 
+			line width = 0.5, 
+			rounded corners=0.5] 
+			(0,0) rectangle (1,1);
+		\end{scope}
+		\path[draw, line width = 0.5] (0.5, 0.5) 
+		-- (1, 1);
+		\path[draw, line width = 0.5] (0.6, 1) 
+		-- (1, 1) -- (1, 0.6);
+	}
+}
 \newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
 
 \renewcommand{\labelitemii}{$\circ$}
@@ -98,15 +98,15 @@
 
 %----------HEADING-----------------
 \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-	\textbf{\href{https://msharma.me/}{\huge Mayank Sharma}} & 
-	H-303/5, IIT Kanpur \vspace{2pt} \\
+	\textbf{\href{https://msharma.in/}{\huge Mayank Sharma}} & 
+	H-315/5, IIT Kanpur \vspace{2pt} \\
 	Third Year Undergraduate &
-	Mobile : +91-9461240034  $\vert$ 
+	+91-9461240034  $\vert$ 
 	\href{mailto:mayank8019@gmail.com}{mayank8019@gmail.com}\\
 	Computer Science \& Engineering &
 	\faGithub\hspace{0.3em}\href{https://github.com/mayanksha}{mayanksha} $\vert$
 	\faLinkedin \hspace{0.3em}\href{https://www.linkedin.com/in/mayanksha}{mayanksha} $\vert$
-	\faHome \hspace{0.3em}\href{https://msharma.me}{msharma.me}
+	\faHome \hspace{0.3em}\href{https://msharma.in}{msharma.in}
 	\\
 \end{tabular*}
 \vspace{-8pt}
@@ -117,120 +117,160 @@
 \resumeSubHeadingListStart
 \resumeSubheading
 {Indian Institute of Technology, Kanpur}{Kanpur, India}
-{B.Tech in Computer Science \& Engineering; \textbf{CGPA 6.53/10.0}}{July 2016 -- present}
+{B.Tech in Computer Science \& Engineering; CGPA 6.25/10.0}{July 2016 -- present}\vspace{0pt}
 \resumeSubheading
 {Children Senior Secondary School, Dadabari, Kota (Raj.)}{Kota, Rajasthan}
-{AISSCE Class XII; \textbf{92.0\%}}{2016}
+{AISSCE Class XII; \textbf{92.0\%}}{2016}\vspace{0pt}
 \resumeSubheading
 {Central Academy Sr. Sec. School}{Chittorgarh, Rajasthan}
 {CBSE Class X; \textbf{CGPA 10.0/10.0}}{2014}
 \resumeSubHeadingListEnd
-\vspace{-5pt}
+\vspace{-8pt}
 
 %-----------KEY SCHOLASTIC ACHIEVEMENTS-----------------
 \section{Key Scholastic Achievements}
-\begin{itemize}[noitemsep]
-\item \textbf{All India Rank 630} in JEE Advanced 2016 among 200 thousand selected candidates.
-\item \textbf{All India Rank 2237} in JEE Main 2016 among 1.2 million candidates.
-\item \textbf{All India Rank 854}, KVPY Fellowship Award awarded by Department of Science and Technology, India.
-\item Awarded \textbf{Certificate of Merit} for being in \textbf{State Top 1-Percent} in Nation Standard Examination in Physics (NSEP).\vspace*{-8pt}
+%\begin{itemize}[noitemsep]
+\begin{itemize}
+	\setlength\itemsep{0pt}
+	\item \textbf{All India Rank 630} in JEE Advanced 2016 among 200 thousand selected candidates.
+	\item \textbf{All India Rank 2237} in JEE Main 2016 among 1.2 million candidates.
+	\item \textbf{All India Rank 854}, KVPY Fellowship Award (2015) awarded by Department of Science and Technology, India.
+	\item Awarded \textbf{Certificate of Merit} for being in \textbf{State Top 1-Percent} in Nation Standard Examination in Physics (NSEP) in 2016.\vspace*{-8pt}
 \end{itemize}
 
 
 %-----------EXPERIENCE-----------------
-\section{Experience}
+\section{Internship Experience}
 \resumeSubHeadingListStart
 
 \resumeSubheading
 {Software Developer Intern, EarlySalary}{Pune, India}
 {Pickup System Case Allocation Automation (Mentor: Vivek Jain)}{May 2018 - July 2018}
-\vspace{4pt}
+\vspace{2pt}
+%\begin{itemize}[noitemsep]
 \begin{itemize}
-	\itemsep1pt
-		\item[$\circ$] Worked on the backend of a scalable web app, and helped migration from existing PHP based system.
-		\item[$\circ$] Implemented centralized Authentication \& Authorization using \textbf{Jumpcloud’s Directory-as-a-Service}.
-		\item[$\circ$] Helped design APIs and Algorithms, to retrieve a new case and automatically assign to a Pickup Agency based upon its priority in a cluster, as soon as a new case is added.
-		\item[$\circ$] Developed Microservices for Lambda based REST APIs, deloyed them on Lambda using Claudia.js, and Prevented XSS into the existing MySQL Databases.
-		\item[$\circ$] \textbf{Techonologies Used}: Express.Js with Node.Js, Typescript, Redis (as session store), MySQL,
-			LDAP, AWS Lambda Services.\vspace*{-8pt}
+	\item[$\circ$] Worked on the backend of a scalable web app, and helped migration from existing PHP based system.
+	\item[$\circ$] Implemented centralized Authentication \& Authorization using \textbf{Jumpcloud’s Directory-as-a-Service}.
+	\item[$\circ$] Helped design APIs and Algorithms, to retrieve a new case and automatically assign to a Pickup Agency based upon its priority in a cluster, as soon as a new case is added.
+	\item[$\circ$] Developed Microservices for Lambda based REST APIs and deloyed them on Lambda using Claudia.js.
+	\item[$\circ$] \textbf{Techonologies Used}: Express.js with Node.js, Typescript, Redis (as session store), MySQL, LDAP, AWS Services.\vspace*{-8pt}
+\end{itemize}
+\resumeSubHeadingListEnd
+
+
+%-----------SELF PROJECTS-----------------
+\section{Projects}
+\resumeSubHeadingListStart
+\resumeSubheading
+		{Zero Shot Sketch Based Image Retrieval (SBIR)}{Kanpur, India}
+{Intro. to Machine Learning (Prof. Piyush Rai)}{Aug. 2018 - Nov. 2018}
+\vspace{2pt}
+\begin{itemize}
+	\item[$\circ$] Implemented Principal Component Analysis \& tried extending it to zero-shot setting, to test how it \\ generalizes to other unseen classes.
+	\item[$\circ$] Used TU Berlin Sketch Dataset and learned how to extract features to be later compared to hand-drawn sketches. 
+	\item[$\circ$] Used canny edge detection to convert images to basic sketches in OpenCV. 
+	\item[$\circ$] Modeled these images using caffe and tensorflow by taking hints and code snippets from various research papers.
+\end{itemize}
+\resumeSubheading
+{Linux From Scratch}{ \textbf{\hfill}\href{https://github.com/mayanksha/lfs} {\faGithub \hspace{0.1em} GitHub (/mayanksha/lfs)}}
+{ACA Semester Project}{Jan. 2017 - Apr. 2017}
+\vspace{2pt}
+	\begin{itemize}
+				\item Developed a {\bf Student Search} in bash which scraped data from Office Automation Portal. 
+				\item Used the ZeromQ library in python to implement client server model to play Collatz Conjecture Game.
+				\item Created a \textbf{SysVInit} based bare-bones linux distribution, compiling packages from tarballs, building upon the host system kernel and finally compiling the kernel for new distro.
 	\end{itemize}
 \resumeSubHeadingListEnd
 
-
-%-----------PROJECTS-----------------
-\section{Projects}
-\resumeSubHeadingListStart
-\resumeSubItem{Cable Braiding Machine, IIT Kanpur}
-{Worked on a gear-driven Cable Braiding Machine to braid multiple threads simultaneously; Part of a Course Project (TA-202)}
-\resumeSubItem{The Automatic Stamper, IIT Kanpur}
-{Worked on an Automatic Stamper, which when connected to a motor could stamp four times in one revolution; Part of a Course Project (TA-201)}
-\resumeSubHeadingListEnd
-
-%-----------POR-----------------
-\section{Positions of Responsibility}
-\begin{itemize}[noitemsep]
-    \setlist{nolistsep}
-	\item \textbf{Head, Web Development, Entrepreneurship Cell, IIT Kanpur}	
-		\hfill \textit{(April ‘18 - present)}
-		\begin{itemize}
-			\item Spearheading a team of 10+ Senior Web Developer Executives,	
-				effectively distributing development work and collaborating in a Git Organization.
-			\item Developed Campus Ambassador and Events Registration Portals. (MEAN Stack)
-		\end{itemize}
-
-	\item \textbf{Webmaster, Hall 5, IIT Kanpur}
-		\hfill \textit{(November ‘17 - present)}
-		\begin{itemize}
-			\item Redesigned and revamped the webpage of Hall 5, IIT Kanpur.\vspace*{-8pt}
-		\end{itemize}
-
-\end{itemize}\vspace*{-6pt}
-
+%-----------Skills-----------------
 \section{Technical Skills}
 \begin{itemize}[noitemsep]
 	\item
 		\textbf{Programming : }
-		 Javascript and Typescript (\textit{Proficient}), C++, Python, C, Bash Scripting, MATLAB
+		Javascript and Typescript (\textit{Proficient}), Golang (\textit{Fluent}), C++, C, Bash Scripting
 	\item
 		\textbf{Web : }
-		Express.js with Node.js \textit{(Fluent)}, Angular 4, MongoDB (Mongoose), AWS Lambda \& EC2
+		Express.js with Node.js \textit{(Fluent)}, Angular 4, MongoDB (Mongoose), Nginx \& Openresty 
 
 	\item
-	\textbf{Databases \& Utilities : }
+		\textbf{Databases \& Utilities : }
 		MySQL, Redis, LDAP, Git, \LaTeX, Vim, AutoCAD
 	\item
 		\textbf{Operating Systems : }
 		Linux (Arch, Ubuntu \& LFS), Windows
-\vspace*{-5pt}
+		\vspace*{-5pt}
 
 \end{itemize}
 \vspace*{-8pt}
+
+%-----------POR-----------------
+\section{Positions of Responsibility}
+
+\begin{itemize}
+	\setlength\itemsep{0pt}
+\item \textbf{Head, Web Development, Entrepreneurship Cell, IIT Kanpur}	
+	\hfill \textit{(April ‘18 - present)}
+	\begin{itemize}
+		\setlength\itemsep{0pt}
+		\item Spearheading a team of 10+ Senior Web Developer Executives,	
+			effectively distributing development work and collaborating in a Git Organization.
+		\item Developed Campus Ambassador and Events Registration Portals. (MEAN Stack)
+	\end{itemize}
+
+\item \textbf{Webmaster, Hall 5, IIT Kanpur}
+	\hfill \textit{(Nov. ‘17 - Oct. ‘18)}
+	\begin{itemize}
+		\setlength\itemsep{0pt}
+		\item Redesigned and revamped the webpage of Hall 5, IIT Kanpur.\vspace*{-8pt}
+	\end{itemize}
+
+\end{itemize}\vspace*{-6pt}
+
+%-----------Relevant Courses-----------------
 \section{Relevant Courses}
-{\fontsize{10pt}{1em}\bodyfontlight\upshape\color{black}
+{\fontsize{10pt}{1em}\upshape\color{black}
 	\begin{tabular*}{\textwidth}{l l l}
+		Systems \& Cyber Security ($i$) 
+		& \hspace{3em} Blockchain Technology \& Applications ($i$) 
+		& \hspace{3em} Database Systems ($i$)
+		\\
+		Operating Systems
+		& \hspace{3em} Intro. to Machine Learning
+		& \hspace{3em} Software Engineering ($i$)
+		\\
 		Data Structures \& Algorithms 
-		& \hspace{6em} Intro. to Machine Learning ($i$) 
-		& \hspace{6em} Computer Networks ($i$)
+		&\hspace{3em} Discrete Mathematics 
+		&\hspace{3em} Introduction to Programming
+		%&\hspace{6em} Algorithms 2 ($i$)
+		%&\hspace{6em} Theory Of Computation
 		\\
-		Operating Systems ($i$)
-		&\hspace{6em} Algorithms 2 ($i$)
-		&\hspace{6em} Theory Of Computation ($i$)
-		\\
-		Introduction to Programming &\hspace{6em} 
-		Discrete Mathematics   &\hspace{6em} 
-		Logic in Computer Science  \vspace{0pt}
+		 %&\hspace{6em} 
+			%&\hspace{6em} 
+		%Logic in Computer Science  \vspace{0pt}
 	\end{tabular*}
 }
 \hspace*{\fill} 
-		$i$: In progress\\
+$i$: In progress\\
 
 \vspace{-0.6cm}
+
+%-----------Extracurriculars-----------------
 \section{Extracurriculars \& Hobbies}
-\begin{itemize}[noitemsep]
-	  \item \fontsize{10pt}{1em}A fitness enthusiast, who likes to lead an active lifestyle, regularly hitting the gym and \textbf{lost 20 Kgs weight} in the first year. 
-	  \item Part of School Basketball Team playing at District Level, winning accolades for the team.
+\begin{itemize}
+	\setlength\itemsep{0pt}
+	\item \fontsize{10pt}{1em} Won the Inter-hall Capture-the-Flag (CTF) competition participating from the pool Mughals.
+	\item	A fitness enthusiast, who likes to lead an active lifestyle, regularly hitting the gym and lost 20 Kgs weight in the first year. 
+	\item Part of School Basketball Team playing at District Level, winning accolades for the team.
 \end{itemize}
 
+%-----------Interests-----------------
+\section{Interests}
+\begin{itemize}
+	\setlength\itemsep{0pt}
+	\item Cyber-Security and Reverse Engineering. Working with low-level C/C++ Code and finding exploits in them. 
+	\item Architecture and Scalability aspects of various highly performant Backend Systems.	
+	\item Open-source development. Currently, working towards bugs in Gnome-Maps application for the Gnome Organization. IRC (irc.gnome.org - mayanksha)
+\end{itemize}
 %
 %--------PROGRAMMING SKILLS------------
 %\section{Programming Skills}
