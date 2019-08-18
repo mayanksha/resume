@@ -1,44 +1,118 @@
 \cvsection{Projects}
 \begin{cventries}
 
+  % \cventry
+  % {Cable Braiding Machine, IIT Kanpur}
+  % {Course Group Project (TA-202)}
+  % {IIT Kanpur}
+  % {4th Semester}
+  % {
+    % \begin{cvitems}
+		% \item Worked on a gear-driven Cable Braiding Machine to braid multiple threads simultaneously.
+		% \item Used various Mechanical Processes, including Lathe to fabricate the required parts. 
+	% \end{cvitems}
+  % }
+
   \cventry
-  {Cable Braiding Machine, IIT Kanpur}
-  {Course Group Project (TA-202)}
-  {IIT Kanpur}
-  {4th Semester}
+  {Course Project, under Prof. Biswabandan Panda}
+  {Microarchitectural Side and Covert-Channel Attacks}
+  {}
+  {\textit{Ongoing}}
   {
     \begin{cvitems}
-		\item Worked on a gear-driven Cable Braiding Machine to braid multiple threads simultaneously.
-		\item Used various Mechanical Processes, including Lathe to fabricate the required parts. 
-	\end{cvitems}
-  }
-  %\cventry
-  %{Association of Computing Activities}
-				%{Linux from Scratch}
-  %{IIT Kanpur}
-  %{2nd Semester}
-  %{
-	%\begin{cvitems}
-	%\item Developed a Student Search in bash which scraped data from Office Automation Portal of IITK. 
-	%\item Used the ZeromQ library in python to implement client server model to play Collatz Conjecture Game.
-	%\item Familiarised with Shell Utilities, Linux Architecture, Bootloaders, etc.
-	%\item Created a bootable (SysVInit based) bare-bones linux distribution, compiling packages from tarballs, building upon the host system kernel and finally compiling the kernel for new distro.
-	%\item Created Scripts in NodeJS and Javascript to fetch all the BLFS Packages along with their installation commands, storing them as JSON files. 
-	%\end{cvitems}
-  %}
-  
-  	\cventry
-  {TA-201 Group Project}
-	{The Automatic Stamper}
-  {IIT Kanpur}
-  {3rd Semester}
-  {
-    \begin{cvitems}
-    \item Worked on a stamper, which if connected to a motor could stamp four times in one revolution.
-	\item Used the Geneva Mechanism and Chain \& Sprocket Mechanism to drive the stamper.
-    \item Used the mechanical processes of Casting, Brazing, Welding and Sheet Metal Forming to build it.
+        \item Working on mounting a covert channel attack on a victim running some benign process on a different core, using the FLUSH + RELOAD attack on cache.
+        \item Developing a side-channel attack on GnuPG cryptographic library, to observe cache accesses to critical functions like Square, Reduce, Multiply to get the RSA Private Key.
     \end{cvitems}
   }
+
+  \cventry
+  {Course Project, under Prof. Pramod Subramanyam}
+  {Cryptographically Secure Key-Value Store}
+  {\href{https://github.com/mayanksha/crypt-key-value-store}{\faGithubSquare\acvHeaderIconSep GitHub}}
+  {6th Semester}
+  {
+    \begin{cvitems}
+    \item Designed and implemented a secure key-value store (in Golang) with sharing semantics (between different users), under the assumption that datastore is malicious.
+    \item Used a multi-level block structure (with encrypted metadata) to effeciently share/append file, with strong guarantees on time complexities of various operations (AppendFile, ShareFile, RevokeFile).
+    \end{cvitems}
+  }
+
+  \cventry
+  {Course Project, under Prof. Sandeep Shukla}
+  {A Blockchain based Voting System with Biometric Verification}
+  {\href{https://github.com/mayanksha/blockchain/tree/master/Project}{\faGithubSquare\acvHeaderIconSep GitHub}}
+  {6th Semester}
+  {
+    \begin{cvitems}
+    \item Designed an Ethereum based Voting System, with Biometric (Fingerprint) voter Verification, and experimented with Fuzzy-hashing on fingerprint minutiae data (obtained using a Fingerprint Reader).
+    \item Developed a back-end for the system (with a fallback to LDAP credentials) and deployed it over the Ethereum Ropsten Test Network.
+    \end{cvitems}
+  }
+
+  \cventry
+  {Course Project, under Prof. Arnab Bhattacharya}
+  {Databases Project - Traffic Management System}
+  {\href{https://github.com/mayanksha/cs315-traffic-mgmt/blob/master/report.pdf}{\faGithubSquare\acvHeaderIconSep GitHub}}
+  {6th Semester}
+  {
+    \begin{cvitems}
+    \item Designed collection schemas of various entities to store/fetch information in an efficient manner from a MongoDB database (with Mongoose as the ODM).
+    \item Developed a MEAN web-app to permit Role-Based-Access-Control (RBAC) for different stakeholders in the Traffic Mgmt. System.
+    \end{cvitems}
+  }
+
+  \cventry
+  {Course Project, under Prof. Debadatta Mishra}
+  {GemOS - Operating Systems}
+  {\href{https://github.com/mayanksha/CS330}{\faGithubSquare\acvHeaderIconSep GitHub}}
+  {5th Semester}
+  {
+    \begin{cvitems}
+    \item Implemented Multi-level paging, signals like SIGINT, SIGSEGV and SIGFPE and exception handlers like page-faults and divide-by-zero.
+    \item Implemented system calls like expand, shrink, write, sleep, clone, etc. and added process scheduling (init/cloned processes) with round-robin scheduling policy in GemOS.
+    \item Designed and implemented a scalable ext-2 like FUSE-based filesystem for GemOS.
+    \end{cvitems}
+  }
+
+  \cventry
+  {Machine Learning Course Project, under Prof. Piyush Rai}
+  {Zero-shot Sketch Based Image Retrieval (SBIR)}
+  {\href{https://github.com/mayanksha/cs771/tree/master/Project}{\faGithubSquare\acvHeaderIconSep GitHub}}
+  {5th Semester}
+  {
+    \begin{cvitems}
+	\item Implemented Principal Component Analysis \& tried extending it to zero-shot setting, to test how it generalizes to other unseen classes.
+	\item Used TU Berlin Sketch Dataset and learned how to extract features to be later compared to hand-drawn sketches.
+	\item Used canny edge detection to convert images to basic sketches in OpenCV.
+	\item Modeled these images using tensorflow by taking hints and code snippets from various research papers.
+    \end{cvitems}
+  }
+
+  \cventry
+  {Association of Computing Activities (ACA, IITK CSE)}
+  {Linux from Scratch}
+  {\href{https://github.com/mayanksha/lfs}{\faGithubSquare\acvHeaderIconSep GitHub}}
+  {2nd Semester}
+  {
+    \begin{cvitems}
+    \item Developed a Student Search in bash which scraped data from Office Automation Portal of IITK.
+    \item Used the ZeromQ library in python to implement client server model to play Collatz Conjecture Game.
+    \item Created a bootable (SysVInit based) bare-bones linux distribution, compiling packages from tarballs, building upon the host system kernel and finally compiling the kernel for new distro.
+    \end{cvitems}
+  }
+
+      % \cventry
+  % {TA-201 Group Project}
+	% {The Automatic Stamper}
+  % {IIT Kanpur}
+  % {3rd Semester}
+  % {
+    % \begin{cvitems}
+    % \item Worked on a stamper, which if connected to a motor could stamp four times in one revolution.
+	% \item Used the Geneva Mechanism and Chain \& Sprocket Mechanism to drive the stamper.
+    % \item Used the mechanical processes of Casting, Brazing, Welding and Sheet Metal Forming to build it.
+    % \end{cvitems}
+  % }
 
 \end{cventries}
 

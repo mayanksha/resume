@@ -2,18 +2,50 @@
 \begin{cventries}
 
   \cventry
-  {Pickup System Case Allocation Automation}
+  {Improve Google Drive support in GNOME Virtual File System (GVfs), Mentor: Ondřej Holý}
+  {Google Summer of Code, GNOME Organization}
+  {India}
+  {Summer 2019}
+  {
+    \begin{cvitems}
+    \item Ported libgdata from (\textit{autotools + make}) to (\textit{meson + ninja}) build system, writing build files to compile and link a shared library consisting of  100+ object files, thereby \textbf{improving build times by $\sim$40\%}.
+    \item Developed a new API (\texttt{GDataDocumentsProperty}) for libgdata (C library for Google Drive API) from scratch to support Properties Resource on File objects.
+    \item Augmented copy, move, delete and make\_directory operations in GVfs (earlier disabled) with \texttt{GDataDocumentsProperty} API, by creating a volatile path to the new entry, thereby handling differences between a \textbf{POSIX-based fs} \textit{vs} a \textbf{database-backed fs} (Google Drive).
+    \item Developed a \textbf{regression test-suite} from scratch for the Google backend in GVfs. The test-suite is planned to be a part of \textbf{Gitlab based CI system} and uses GIO operations on a dummy google account to test the backend.
+    \item All the code is open-sourced on GNOME's Gitlab and is planned to make way into \textbf{GNOME's 3.36 stable release}.
+    \end{cvitems}
+  }
+
+  \cventry
+  {Microservice Orchestration Layer (\textit{Mozart}), Mentor: Kshirodra Meher}
+  {Software Engineer Intern, WalmartLabs}
+  {Bengaluru, India}
+  {Summer 2019}
+  {
+    \begin{cvitems}
+    \item Worked on the Service Orchestration Layer (REST based) for Walmart International, to create a \textbf{one-stop solution for 162 Microservices}.
+    \item Helped migration from a monolithic Oracle ATG (Java based) system to a \textbf{Bulk-Head Design Pattern based architecture} in node.js.
+    \item Developed \textbf{"mozart-utils"}, an npm package published to Walmart's in-grown npm repository providing standardized utility functions to over 8 sub-modules in a mono-repo.
+    \item Collaborated with team to develop \textbf{20 endpoints}, with all 20 being used in production systems for Walmart Mexico.
+    \item Contributed to seen improvements in performance \textbf{from less than 15,000 to $\sim$ 90,000 concurrent users/hr} on a single instance.
+    \item Received a direct Pre-Placement-Offer (PPO) on showing outstanding performance amongst 120 interns.
+    % \item Employed CI/CD best practices to develop and deploy on Walmart’s ingrown CI (Looper, based on Jenkins) and CD (Concord) systems.
+    \end{cvitems}
+  }
+
+  \cventry
+  {Pickup System Case Allocation Automation, Mentor: Vivek Jain}
   {Software Developer Intern, EarlySalary}
   {Pune, India}
   {Summer 2018}
   {
     \begin{cvitems}
-	\item Worked on the backend of a scalable web app, and helped migration from existing PHP based system.
-	\item Implemented centralized Authentication and Authorization, using \textbf{JumpCloud’s Directory-as-a-Service (LDAP)}.
-\item Helped design APIs and Algorithms, to retrieve a new case and automatically assign to a Pickup Agency based \\ upon its priority in a cluster, as soon as a new case is added.
-\item Developed Microservices for Lambda based REST APIs, and Prevented XSS into the existing MySQL Databases.
-\item Helped deploy the REST API as AWS Lambda Functions using Claudia.js.
-\item \textbf{Techonologies Used}: Express.Js with Node.Js, Typescript, Redis (as session store), MySQL,
+	\item Worked on the backend of a scalable web app, and helped migration from an existing PHP based system to the one based on node.js.
+	\item Implemented centralized Authentication and Authorization, using JumpCloud’s Directory-as-a-Service \textbf{(LDAP)}.
+\item Helped \textbf{design APIs and Algorithms}, to retrieve and automatically assign a new case to a Pickup Agency based upon its priority in a cluster.
+\item Developed \textbf{Microservices for Lambda based REST APIs}, and Prevented XSS into the existing MySQL Databases.
+% \item Helped deploy the REST API as AWS Lambda Functions using Claudia.js.
+\item Techonologies Used: Express.Js with Node.Js, Typescript, MySQL,
 LDAP, AWS Lambda Services
     \end{cvitems}
   }
