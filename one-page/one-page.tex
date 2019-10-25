@@ -1,0 +1,351 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.3 (22/9/2018)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% v1.3 author:
+% Zachary Taylor
+%
+% v1.3 repository:
+% https://github.com/ZDTaylor/Deedy-Resume-Reversed
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% TODO:
+% 1. Add various styling and section options and allow for multiple pages smoothly.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.3:
+% 1. Removed MacFonts version as I have no desire to maintain it nor access to macOS
+% 2. Switched column ordering
+% 3. Changed font styles/colors for easier human readability
+% 4. Added, removed, and rearranged sections to reflect my own experience
+% 5. Hid last updated
+%
+% v1.2:
+% 1. Added publications in place of societies.
+% 2. Collapsed a portion of education.
+% 3. Fixed a bug with alignment of overflowing long last updated dates on the top right.
+%
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\documentclass[]{deedy-resume-reversed}
+\usepackage{fancyhdr}
+\usepackage{fontspec}
+\pagestyle{fancy}
+\fancyhf{}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\namesection{Mayank Sharma}{ %\urlstyle{same}\href{http://example.com}{example.com}| \href{http://example2.co}{example2.co}\\
+\href{tel:+91 8112266961}{+91 8112266961} \midsep
+\href{mailto:mayank8019@gmail.com}{mayank8019@gmail.com} \midsep
+\href{https://msharma.in}{msharma.in} \midsep
+\href{https://github.com/mayanksha}{\faGithubSquare\space GitHub} \midsep
+\href{https://gitlab.gnome.org/mayanksha}{\faGitlab\space GitLab}
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN ONE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{minipage}[t]{0.60\textwidth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EXPERIENCE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experience}
+\runsubsection{GNOME}
+\descript{| Google Summer of Code Intern \boxedLink{Report}{https://msharma.in/gsoc\%202019/GSoC-Final-Report/}{3.6em}}
+\location{May 2019 $-$ Aug 2019 | Mentor: Ondřej Holý }
+\vspace{10pt} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Ported libgdata from (\textit{autotools + make}) to (\textit{meson + ninja}) build system, writing build files to compile and link a shared library consisting of  100+ object files, thereby improving build times by $\sim$40\%.
+\item Developed a new API for libgdata and augmented various operations in GVfs with this API, creating volatile paths to the new entries.
+% \item Developed a regression test-suite for the Google backend in GVfs.
+\item All the code is Open Source on GNOME's Gitlab and is planned to make way into GNOME's 3.36 stable release.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Walmart Labs}
+\descript{| Software Engineering Intern}
+\location{May 2019 $-$ July 2019 | Bengaluru, India}
+% \vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+    \item Worked on the Service Orchestration Layer for Walmart International, to create a one-stop solution for 162 Microservices.
+    % \item Helped migration from a monolithic Oracle ATG (Java based) system to a Bulk-Head Design Pattern based architecture in node.js.
+    \item Developed "mozart-utils", an npm package published to Walmart's in-grown npm repository providing standardized utility functions to over 8 sub-modules in a mono-repo.
+    \item Collaborated with team to develop 20 endpoints, with all 20 being used in production systems for Walmart Mexico.
+    % \item Contributed to seen improvements in performance from less than 15,000 to $\sim$ 90,000 concurrent users/hr on a single instance.
+    % \item Received a direct Pre-Placement-Offer (PPO) on showing outstanding performance amongst 120 interns.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{EarlySalary}
+\descript{| Software Developer Intern}
+\location{May 2018 $-$ July 2018 | Pune, India}
+% \vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+	% \item Worked on the backend of a scalable web app, and helped migration from an existing PHP based system to the one based on node.js.
+	\item Implemented centralized Authentication and Authorization, using JumpCloud’s Directory-as-a-Service (LDAP).
+\item Developed Algorithms and APIs, to retrieve and automatically assign a new case to a Pickup Agency based upon its priority in a cluster.
+% \item Developed Microservices for Lambda based REST APIs, and Prevented XSS into the existing MySQL Databases.
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PROJECTS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Key Projects}
+\runsubsection{LLC Side \& Covert-Channel Attacks}
+\descript{  }
+\location{IIT Kanpur | Prof. Biswabandan Panda}
+\begin{tightemize}
+    \item Working on mounting a covert channel attack on a victim running on a different core, using the FLUSH + RELOAD attack on L3-cache.
+    \item Developing a side-channel attack on GnuPG, to observe cache accesses to infer the RSA Private Key.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Secure Key-Value Store}
+    \descript{| Systems Security   \boxedLink{Code}{https://github.com/mayanksha/crypt-key-value-store}{2.9em}}
+    \location{IIT Kanpur | Prof. Pramod Subramanyam}
+\begin{tightemize}
+    \item Designed and implemented a secure key-value store (in Go) with sharing semantics under the assumption that datastore is malicious.
+    % \item Used a multi-level block structure (with encrypted metadata) to efficiently perform various operations.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Improving Security of Zoobar Server}
+\descript{}
+\location{IIT Kanpur | Prof. Pramod Subramanyam}
+\begin{tightemize}
+    \item Exploited overflow, format string, DoS vulnerabilities and crafted browser based attacks followed by fixing bugs and implementing principle of least privileges by separating various processes.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{Gem OS}
+\descript{| Operating System   \boxedLink{Code}{https://github.com/mayanksha/CS330}{2.9em}}
+\location{IIT Kanpur | Prof. Debadatta Mishra}
+\begin{tightemize}
+    \item Implemented Multi-level paging, signals like SIGINT, SIGSEGV and SIGFPE, exception handlers like page-faults and divide-by-zero and added system calls like expand, shrink, write, sleep, clone, etc.
+    \item Designed a scalable ext-2 like FUSE-based filesystem for GemOS.
+\end{tightemize}
+\sectionsep
+
+% \runsubsection{Chit Chat}
+% \descript{| Class Project for Distributed Client-Server Programming}
+% \location{Jan 2018 – May 2018 | Mississippi State, MS}
+% \begin{tightemize}
+% \item Lead the development of \textbf{\href{https://github.com/ZDTaylor/ChitChat}{Chit Chat}}, an anonymous chat application created as a class project.
+% \item Chit Chat provides real-time communication while utilizing a PHP backend and AngularJS frontend.
+% \end{tightemize}
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Research}
+% \runsubsection{Cornell Robot Learning Lab}
+% \descript{| Researcher}
+% \location{Jan 2014 – Jan 2015 | Ithaca, NY}
+% Worked with \textbf{\href{http://www.cs.cornell.edu/~ashesh/}{Ashesh Jain}} and \textbf{\href{http://www.cs.cornell.edu/~asaxena/}{Prof Ashutosh Saxena}} to create \textbf{PlanIt}, a tool which  learns from large scale user preference feedback to plan robot trajectories in human environments.
+% \sectionsep
+
+% \runsubsection{Cornell Phonetics Lab}
+% \descript{| Head Undergraduate Researcher}
+% \location{Mar 2012 – May 2013 | Ithaca, NY}
+% Led the development of \textbf{QuickTongue}, the first ever breakthrough tongue-controlled game with \textbf{\href{http://conf.ling.cornell.edu/~tilsen/}{Prof Sam Tilsen}} to aid in Linguistics research.
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COMMUNITY SERVICE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Community Service}
+
+% \begin{tabular}{rll}
+% 2013 -- 2018    & Tennessee     & St. Baldrick's Foundation\\
+% 2014 -- 2017	& Tennessee     & American Cancer Society's Hope Lodge\\
+% 2013 -- 2015    & Tennessee     & Habitat for Humanity\\
+% 2011 -- 2015    & Tennessee     & Special Olympics\\
+% \end{tabular}
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SOCIETIES
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Societies}
+
+% \begin{tabular}{rll}
+% 2018 -- 2018    & National      & Association of Computing Machinery (ACM)\\
+% 2017 -- 2019	& National      & Scrum Alliance Certified ScrumMaster\\
+% 2015 -- 2019    & University    & Shackouls Honors College\\
+% \end{tabular}
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     AWARDS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Awards}
+% \begin{tabular}{rll}
+% 2015        & 99\textsuperscript{th} percentile & National Merit Scholarship Finalist\\
+% \end{tabular}
+% \sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     PUBLICATIONS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Publications}
+% \renewcommand\refname{\vskip -1.5cm} % Couldn't get this working from the .cls file
+% \bibliographystyle{abbrv}
+% \bibliography{publications}
+% \nocite{*}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     COLUMN TWO
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.33\textwidth}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     EDUCATION
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Education}
+
+\subsection{IIT Kanpur}
+\descript{Bachelor of Technology in Computer Science}
+    \textit{Expected to Graduate in 2020}
+ % \textbullet\ Cum. GPA: 6.7 / 10.0
+\sectionsep
+\sectionsep
+
+\subsection{Children Sr. Sec School}
+\descript{AISSCE Class XII (CBSE): 92.0\%}
+\sectionsep
+\sectionsep
+
+\subsection{Central Academy Sr. Sec School}
+\descript{AISSE Class X (CBSE): 10.0/10.0}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%    Achievements 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Achievements}
+\vspace{10pt} % Hacky fix for awkward extra vertical space
+    \begin{tightemize}
+        \item \descript{All India Rank 630 \\ JEE Advanced 2016}
+        \item \descript{All India Rank 2237 \\ JEE Mains 2016}
+        \item \descript{All India Rank 854 \\ KVPY 2015}
+        \item \descript{All India Rank 1707 \\ NSTSE 2014}
+    \end{tightemize}
+\sectionsep
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     SKILLS
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Skills}
+\subsection{Programming}
+    C/C++  \textbullet\ Golang  \textbullet\ Typescript \textbullet\
+    python \textbullet\ bash  \textbullet\ x86 Assembly \textbullet{} Glib
+\sectionsep
+
+\subsection{Web}
+    Node.js \textbullet\ MongoDB \textbullet\ Angular 7 \textbullet\ AWS Lambda \& EC2
+\sectionsep
+
+    \subsection{OSes \& Tools}
+    Linux \textbullet\ Windows \textbullet\ gdb \textbullet\ Valgrind \textbullet\ meson \textbullet\  Git \textbullet\ Vim \textbullet\ MySQL
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     COURSEWORK
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Coursework}
+\vspace{10pt} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Secure Memory Systems ($i$)
+\item Security of Critical Infra. ($i$)
+\item Parallel Computing ($i$)
+\item Systems \& Cyber Security
+\item Operating Systems
+\item Blockchain Technology \& Applications
+\item Intro. to Machine Learning
+\item Database Systems
+\item Data Structures \& Algorithms
+\item Discrete Mathematics
+\item Software Engineering
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     Societies
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% \section{Societies}
+% Association for Computing Machinery (ACM)\\
+% Scrum Alliance Certified ScrumMaster\\
+% Shackouls Honors College\\
+% National Merit Scholarship Finalist \\
+% \sectionsep
+
+\end{minipage}
+\end{document}  \documentclass[a4paper]{article}

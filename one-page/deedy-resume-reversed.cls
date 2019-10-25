@@ -31,6 +31,7 @@
 % Date command
 \usepackage[absolute]{textpos}
 \usepackage[UKenglish]{isodate}
+\usepackage{fontawesome}
 \setlength{\TPHorizModule}{1mm}
 \setlength{\TPVertModule}{1mm}
 \newcommand{\lastupdated}{\begin{textblock}{60}(155,5)
@@ -41,7 +42,7 @@ Last Updated on \today
 % Name command
 \newcommand{\namesection}[2]{
 \centering{
-\fontsize{40pt}{60pt}
+\fontsize{35pt}{55pt}
 \fontspec[Path = ../fonts/lato/]{Lato-Lig}\selectfont #1
 } \\[5pt]
 \centering{
@@ -53,9 +54,10 @@ Last Updated on \today
 
 % Section seperators
 \usepackage{titlesec}
-\titlespacing{\section}{0pt}{0pt}{0pt}
-\titlespacing{\subsection}{0pt}{0pt}{0pt}
-\newcommand{\sectionsep}{\vspace{8pt}}
+\titlespacing{\section}{0pt}{-5pt}{0pt}
+\titlespacing{\subsection}{0pt}{5pt}{0pt}
+\newcommand{\sectionsep}{\vspace{6pt}}
+\newcommand{\midsep}{\hspace{5pt}\textbar\hspace{5pt}}
 
 % Headings command
 \titleformat{\section}{\color{headings}
@@ -72,12 +74,15 @@ Last Updated on \today
 \newcommand{\descript}[1]{
 \color{subheadings}\raggedright\scshape\fontspec[Path = ../fonts/raleway/]{Raleway-Medium}\fontsize{11pt}{13pt}\selectfont {#1 \\} \normalfont}
 
+% Boxed Link - like that of [Code]
+\newcommand{\boxedLink}[3]{\href{#2}{\textnormal{\hspace*{\fill} \framebox[#3][l]{#1}}}}
+
 % Location command
 \newcommand{\location}[1]{
 \color{subheadings}\raggedright\fontspec[Path = ../fonts/raleway/]{Raleway-Medium}\fontsize{10pt}{12pt}\selectfont {#1\\} \normalfont}
 
 % Bullet Lists with fewer gaps command
 \newenvironment{tightemize}{
-\vspace{-\topsep}\begin{itemize}\itemsep1pt \parskip0pt \parsep0pt}
+\vspace{-\topsep}\begin{itemize}\itemsep1.3pt \parskip0pt \parsep0pt}
 {\end{itemize}\vspace{-\topsep}}
 
