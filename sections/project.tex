@@ -5,7 +5,7 @@
   % {Cable Braiding Machine, IIT Kanpur}
   % {Course Group Project (TA-202)}
   % {IIT Kanpur}
-  % {4th Semester}
+  % {}
   % {
     % \begin{cvitems}
 		% \item Worked on a gear-driven Cable Braiding Machine to braid multiple threads simultaneously.
@@ -17,12 +17,12 @@
   {Course Project, under Prof. Biswabandan Panda}
   {Microarchitectural Side and Covert-Channel Attacks}
   {}
-  {\textit{Ongoing}}
+  {\href{https://github.com/mayanksha/clflush\_attack}{\faGithubSquare\acvHeaderIconSep GitHub}}
   {
     \begin{cvitems}
         % \item Working on Reverse Engineering L3 cache replacement policy for Intel's Kaby Lake processors.
-        \item Successfully mounted a covert channel attack on a victim running some benign process on a different core, using the FLUSH + RELOAD attack on cache.
-        \item Developing a side-channel attack on GnuPG cryptographic library, to observe cache accesses to critical functions like Square, Reduce, Multiply to get the RSA Private Key.
+        \item Successfully mounted a covert channel attack on a victim running some benign process on a different core, using the FLUSH + RELOAD attack on cache, \textbf{achieving ~65+\% accuracy}.
+        \item Developed a side-channel attack on the GnuPG cryptographic library, to observe cache accesses to critical functions like Square, Reduce, Multiply to get the RSA Private Key.
     \end{cvitems}
   }
 
@@ -30,7 +30,7 @@
   {Course Project, under Prof. Pramod Subramanyam}
   {Cryptographically Secure Key-Value Store}
   {\href{https://github.com/mayanksha/crypt-key-value-store}{\faGithubSquare\acvHeaderIconSep GitHub}}
-  {6th Semester}
+  {}
   {
     \begin{cvitems}
     \item Designed and implemented a secure key-value store (in Golang) with sharing semantics (between different users), under the assumption that datastore is malicious.
@@ -39,14 +39,27 @@
   }
 
   \cventry
-  {Course Project, under Prof. Sandeep Shukla}
-  {A Blockchain based Voting System with Biometric Verification}
-  {\href{https://github.com/mayanksha/blockchain/tree/master/Project}{\faGithubSquare\acvHeaderIconSep GitHub}}
-  {6th Semester}
+  {Course Project, under Prof. Pramod Subramanyam}
+  {Securing Zoobar Server}
+  {\href{https://github.com/mayanksha/CS628}{\faGithubSquare\acvHeaderIconSep GitHub}}
+  {}
   {
     \begin{cvitems}
-    \item Designed an Ethereum based Voting System, with Biometric (Fingerprint) voter Verification, and experimented with Fuzzy-hashing on fingerprint minutiae data (obtained using a Fingerprint Reader).
-    \item Developed a back-end for the system (with a fallback to LDAP credentials) and deployed it over the Ethereum Ropsten Test Network.
+    \item Exploited vulnerabilities using control hijacking techniques like buffer overflow \& return-to-libc attacks.
+        \item Fixed security bugs and implemented privilege separation in the login service of Zoobar web server.
+    \end{cvitems}
+  }
+
+  \cventry
+  {Course Project, under Prof. Debadatta Mishra}
+  {GemOS - Operating Systems}
+  {\href{https://github.com/mayanksha/CS330}{\faGithubSquare\acvHeaderIconSep GitHub}}
+  {}
+  {
+    \begin{cvitems}
+    \item Implemented Multi-level paging, signals like SIGINT, SIGSEGV and SIGFPE and exception handlers like page-faults and divide-by-zero, on gem5 architectural simulator.
+    \item Implemented system calls like expand, shrink, write, sleep, clone, etc. and added process scheduling (init/cloned processes) with round-robin scheduling policy in GemOS.
+    \item Designed and implemented a scalable ext-2 like FUSE-based filesystem for GemOS.
     \end{cvitems}
   }
 
@@ -54,7 +67,7 @@
   {Course Project, under Prof. Arnab Bhattacharya}
   {Databases Project - Traffic Management System}
   {\href{https://github.com/mayanksha/cs315-traffic-mgmt/blob/master/report.pdf}{\faGithubSquare\acvHeaderIconSep GitHub}}
-  {6th Semester}
+  {}
   {
     \begin{cvitems}
     \item Designed collection schemas of various entities to store/fetch information in an efficient manner from a MongoDB database (with Mongoose as the ODM).
@@ -63,37 +76,36 @@
   }
 
   \cventry
-  {Course Project, under Prof. Debadatta Mishra}
-  {GemOS - Operating Systems}
-  {\href{https://github.com/mayanksha/CS330}{\faGithubSquare\acvHeaderIconSep GitHub}}
-  {5th Semester}
+  {Course Project, under Prof. Sandeep Shukla}
+  {A Blockchain based Voting System with Biometric Verification}
+  {\href{https://github.com/mayanksha/blockchain/tree/master/Project}{\faGithubSquare\acvHeaderIconSep GitHub}}
+  {}
   {
     \begin{cvitems}
-    \item Implemented Multi-level paging, signals like SIGINT, SIGSEGV and SIGFPE and exception handlers like page-faults and divide-by-zero.
-    \item Implemented system calls like expand, shrink, write, sleep, clone, etc. and added process scheduling (init/cloned processes) with round-robin scheduling policy in GemOS.
-    \item Designed and implemented a scalable ext-2 like FUSE-based filesystem for GemOS.
+    \item Designed an Ethereum based Voting System, with Biometric (Fingerprint) voter Verification, and experimented with Fuzzy-hashing on fingerprint minutiae data (obtained using a Fingerprint Reader).
+    \item Developed a back-end for the system (with a fallback to LDAP credentials) and deployed it over the Ethereum Ropsten Test Network.
     \end{cvitems}
   }
 
-  \cventry
-  {Machine Learning Course Project, under Prof. Piyush Rai}
-  {Zero-shot Sketch Based Image Retrieval (SBIR)}
-  {\href{https://github.com/mayanksha/cs771/tree/master/Project}{\faGithubSquare\acvHeaderIconSep GitHub}}
-  {5th Semester}
-  {
-    \begin{cvitems}
-	\item Implemented Principal Component Analysis \& tried extending it to zero-shot setting, to test how it generalizes to other unseen classes.
-    \item Used TU Berlin Sketch Dataset to learn various features features for comparison to hand-drawn sketches.
-    % \item Used canny edge detection to convert images to basic sketches in OpenCV.
-	% \item Modeled these images using tensorflow by taking hints and code snippets from various research papers.
-    \end{cvitems}
-  }
+  % \cventry
+  % {Machine Learning Course Project, under Prof. Piyush Rai}
+  % {Zero-shot Sketch Based Image Retrieval (SBIR)}
+  % {\href{https://github.com/mayanksha/cs771/tree/master/Project}{\faGithubSquare\acvHeaderIconSep GitHub}}
+  % {}
+  % {
+    % \begin{cvitems}
+	% \item Implemented Principal Component Analysis \& tried extending it to zero-shot setting, to test how it generalizes to other unseen classes.
+    % \item Used TU Berlin Sketch Dataset to learn various features features for comparison to hand-drawn sketches.
+    % % \item Used canny edge detection to convert images to basic sketches in OpenCV.
+	% % \item Modeled these images using tensorflow by taking hints and code snippets from various research papers.
+    % \end{cvitems}
+  % }
 
   \cventry
   {Association of Computing Activities (ACA, IITK CSE)}
   {Linux from Scratch}
   {\href{https://github.com/mayanksha/lfs}{\faGithubSquare\acvHeaderIconSep GitHub}}
-  {2nd Semester}
+  {}
   {
     \begin{cvitems}
     \item Developed a Student Search in bash which scraped data from Office Automation Portal of IITK.
@@ -106,7 +118,7 @@
   % {TA-201 Group Project}
 	% {The Automatic Stamper}
   % {IIT Kanpur}
-  % {3rd Semester}
+  % {}
   % {
     % \begin{cvitems}
     % \item Worked on a stamper, which if connected to a motor could stamp four times in one revolution.

@@ -189,7 +189,8 @@
 %-------------------------------------------------------------------------------
 % Configure styles for each CV elements
 % For fundamental structures
-\newcommand*{\headerfirstnamestyle}[1]{{\fontsize{32pt}{1.15em}\headerfontlight\color{darktext} #1}}
+% \newcommand*{\headerfirstnamestyle}[1]{{\fontsize{32pt}{1.15em}\headerfontlight\color{darktext} #1}}
+\newcommand*{\headerfirstnamestyle}[1]{{\fontsize{32pt}{1.15em}\headerfont\bfseries\color{text} #1}}
 \newcommand*{\headerlastnamestyle}[1]{{\fontsize{32pt}{1.15em}\headerfont\bfseries\color{text} #1}}
 \newcommand*{\headerpositionstyle}[1]{{\fontsize{8pt}{1.15em}\bodyfont\scshape\color{awesome} #1}}
 \newcommand*{\headeraddressstyle}[1]{{\fontsize{8pt}{1.15em}\headerfont\scshape\color{text} #1}}
@@ -569,7 +570,7 @@
   \vspace{-2.0mm}
   \setlength\tabcolsep{0pt}
   \setlength{\extrarowheight}{5pt}
-  \begin{tabularx}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 2.8cm} R{3.2cm}}
+  \begin{tabularx}{\textwidth}{@{\extracolsep{\fill}} L{\textwidth - 2.7cm} R{2.9cm}}
     \ifempty{#2#3}
       {\entrypositionstyle{#1} & \entrydatestyle{#4} \\}
       {\entrytitlestyle{#2} & \entrylocationstyle{#3} \\

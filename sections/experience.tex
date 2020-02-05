@@ -8,11 +8,11 @@
   {Summer 2019}
   {
     \begin{cvitems}
-    \item Ported libgdata from (\textit{autotools + make}) to (\textit{meson + ninja}) build system, writing build files to compile and link a shared library consisting of  100+ object files, thereby improving build times by $\sim$40\%.
-    \item Developed a new API (\texttt{GDataDocumentsProperty}) for libgdata (C library for Google Drive API) from scratch to support Properties Resource on File objects.
-    \item Augmented copy, move, delete and make\_directory operations in GVfs (earlier disabled) with a new API, thereby handling differences between a POSIX-based fs \textit{vs} a database-backed fs (Google Drive).
-    % \item Developed a \textbf{regression test-suite} from scratch for the Google backend in GVfs. The test-suite is planned to be a part of \textbf{Gitlab based CI system} and uses GIO operations on a dummy google account to test the backend.
-    \item All the code is open sourced and is planned to be merged for \textbf{GNOME's 3.36 stable release cycle}.
+    \item \textbf{Improved build times by $\sim$40\%}, by porting libgdata from (\textit{autotools + make}) to (\textit{meson + ninja}) build system, by writing build files for compiling and linking a shared library consisting of 100+ object files.
+    \item Developed a new API (\texttt{GDataDocumentsProperty}) for libgdata (C library for Google Drive API), to support Properties Resource on File objects.
+    \item Drastically improved the copy, move, delete and make\_directory operations in GVfs (earlier disabled).
+    % \item Developed a regression test-suite for the Google backend in GVfs which uses GIO operations, and is planned to be a part of Gitlab's CI system.
+    \item All the code is merged to be \textbf{shipped to millions of GNOME users} in its 3.36 stable release.
     \end{cvitems}
   }
 
@@ -23,10 +23,11 @@
   {Summer 2019}
   {
     \begin{cvitems}
-    \item Worked on the Service Orchestration Layer (REST based) for Walmart International, to create a \textbf{one-stop solution for 162 Microservices}.
+    \item Helped improve number of concurrent users/hr by developing REST-based APIs for the Service Orchestration Layer for Walmart International.
+        % to create a \textbf{one-stop solution for 162 Microservices}, driving up concurrent users/hr significantly.
     % \item Helped migration from a monolithic Oracle ATG (Java based) system to a \textbf{Bulk-Head Design Pattern based architecture} in node.js.
     \item Developed \textbf{"mozart-utils"}, an npm package published to Walmart's in-grown npm repository providing standardized utility functions to over 8 sub-modules in a mono-repo.
-    \item Collaborated with team to develop 20 endpoints, with all 20 being used in production systems for Walmart Mexico.
+    \item Collaborated with the team to develop 20 endpoints for Sams Mexico, which were used during a high-traffic sale event, with 99.9+\% requests being served successfully.
     % \item Helped improve performance from less than 15,000 to $\sim$ 90,000 concurrent users/hr on a single instance.
     \item Received a Pre-Placement-Offer (PPO) on demonstrating outstanding performance amongst 120 interns.
     % \item Employed CI/CD best practices to develop and deploy on Walmart’s ingrown CI (Looper, based on Jenkins) and CD (Concord) systems.
@@ -40,9 +41,8 @@
   {Summer 2018}
   {
     \begin{cvitems}
-	\item Worked on the backend of a scalable web app, and helped migration from an existing PHP based system to the one based on node.js.
-	% \item Implemented centralized Authentication and Authorization, using JumpCloud’s Directory-as-a-Service \textbf{(LDAP)}.
-\item Designed Algorithms and APIs, to retrieve and automatically assign a new case to a Pickup Agency based upon its priority in a cluster.
+	\item Worked directly under the CTO to design APIs and Algorithms, to retrieve and automatically assign a new case to a Pickup Agency based upon its priority in a cluster.
+    \item Implemented centralized Authentication and Authorization, using JumpCloud’s DaaS \textbf{(LDAP)}.
 % \item Developed \textbf{Microservices for Lambda based REST APIs}, and Prevented XSS into the existing MySQL Databases.
 % \item Helped deploy the REST API as AWS Lambda Functions using Claudia.js.
 \item Techonologies Used: Express.Js with Node.Js, Typescript, MySQL,
