@@ -58,7 +58,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\documentclass[]{deedy-resume-reversed}
+\documentclass[a4paper]{deedy-resume-reversed}
 \usepackage{fancyhdr}
 \usepackage{fontspec}
 \pagestyle{fancy}
@@ -104,10 +104,11 @@
 \location{May 2019 $-$ Aug 2019 | Mentor: Ondřej Holý }
 \vspace{10pt} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Ported libgdata from (\textit{autotools + make}) to (\textit{meson + ninja}) build system, writing build files to compile and link a shared library consisting of  100+ object files, thereby improving build times by $\sim$40\%.
-\item Developed a new API for libgdata and augmented various operations in GVfs with this API, creating volatile paths to the new entries.
-% \item Developed a regression test-suite for the Google backend in GVfs.
-\item All the code is Open Source on GNOME's Gitlab and is planned to make way into GNOME's 3.36 stable release.
+    \item \textbf{Improved build times by $\sim$40\%}, by porting libgdata from (\textit{autotools + make}) to (\textit{meson + ninja}) build system, by writing build files for compiling and linking a shared library consisting of 100+ objects.
+    \item Developed a new API (\texttt{GDataDocumentsProperty}) for libgdata (C library for Google Drive API), to support Properties Resource.
+    \item Improved the copy, move, delete and make\_directory operations in GVfs (earlier disabled).
+    % \item Developed a regression test-suite for the Google backend in GVfs which uses GIO operations, and is planned to be a part of Gitlab's CI system.
+    % \item All the code is merged to be \textbf{shipped to millions of GNOME users} in its 3.36 stable release.
 \end{tightemize}
 \sectionsep
 
@@ -116,12 +117,11 @@
 \location{May 2019 $-$ July 2019 | Bengaluru, India}
 % \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-    \item Worked on the Service Orchestration Layer for Walmart International, to create a one-stop solution for 162 Microservices.
-    % \item Helped migration from a monolithic Oracle ATG (Java based) system to a Bulk-Head Design Pattern based architecture in node.js.
-    \item Developed "mozart-utils", an npm package published to Walmart's in-grown npm repository providing standardized utility functions to over 8 sub-modules in a mono-repo.
-    \item Collaborated with team to develop 20 endpoints, with all 20 being used in production systems for Walmart Mexico.
-    % \item Contributed to seen improvements in performance from less than 15,000 to $\sim$ 90,000 concurrent users/hr on a single instance.
-    % \item Received a direct Pre-Placement-Offer (PPO) on showing outstanding performance amongst 120 interns.
+    \item Helped improve number of concurrent users/hr by developing REST-based APIs for the Service Orchestration Layer for Walmart.
+        % to create a \textbf{one-stop solution for 162 Microservices}, driving up concurrent users/hr significantly.
+    % \item Helped migration from a monolithic Oracle ATG (Java based) system to a \textbf{Bulk-Head Design Pattern based architecture} in node.js.
+    \item Developed \textbf{"mozart-utils"}, an npm package published to Walmart's in-grown npm repository providing standardized utility functions to over 8 sub-modules in a mono-repo.
+    \item Collaborated with the team to develop 20 endpoints for Sams Mexico, which were used during a high-traffic sale event, with 99.9+\% requests being served successfully.
 \end{tightemize}
 \sectionsep
 
@@ -130,10 +130,8 @@
 \location{May 2018 $-$ July 2018 | Pune, India}
 % \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-	% \item Worked on the backend of a scalable web app, and helped migration from an existing PHP based system to the one based on node.js.
-	\item Implemented centralized Authentication and Authorization, using JumpCloud’s Directory-as-a-Service (LDAP).
-\item Developed Algorithms and APIs, to retrieve and automatically assign a new case to a Pickup Agency based upon its priority in a cluster.
-% \item Developed Microservices for Lambda based REST APIs, and Prevented XSS into the existing MySQL Databases.
+	\item Worked directly under the CTO to design APIs and Algorithms, to retrieve and automatically assign a new case to a Pickup Agency based upon its priority in a cluster.
+    \item Implemented centralized Authentication and Authorization, using JumpCloud’s DaaS \textbf{(LDAP)}.
 \end{tightemize}
 \sectionsep
 
@@ -146,8 +144,8 @@
 \descript{  }
 \location{IIT Kanpur | Prof. Biswabandan Panda}
 \begin{tightemize}
-    \item Working on mounting a covert channel attack on a victim running on a different core, using the FLUSH + RELOAD attack on L3-cache.
-    \item Developing a side-channel attack on GnuPG, to observe cache accesses to infer the RSA Private Key.
+        \item Successfully mounted a covert channel attack on a victim running some benign process on a different core, using the FLUSH + RELOAD attack on cache, achieving ~65+\% accuracy.
+        \item Developed a side-channel attack on the GnuPG cryptographic library, to observe cache accesses to critical functions to infer private key.
 \end{tightemize}
 \sectionsep
 
@@ -155,7 +153,7 @@
     \descript{| Systems Security   \boxedLink{Code}{https://github.com/mayanksha/crypt-key-value-store}{2.9em}}
     \location{IIT Kanpur | Prof. Pramod Subramanyam}
 \begin{tightemize}
-    \item Designed and implemented a secure key-value store (in Go) with sharing semantics under the assumption that datastore is malicious.
+    \item Designed and implemented a secure key-value store (in Go) with sharing semantics under the assumption of a malicious datastore.
     % \item Used a multi-level block structure (with encrypted metadata) to efficiently perform various operations.
 \end{tightemize}
 \sectionsep
@@ -164,7 +162,7 @@
 \descript{}
 \location{IIT Kanpur | Prof. Pramod Subramanyam}
 \begin{tightemize}
-    \item Exploited overflow, format string, DoS vulnerabilities and crafted browser based attacks followed by fixing bugs and implementing principle of least privileges by separating various processes.
+    \item Exploited buffer overflow, format string, DoS vulnerabilities and crafted browser based attacks followed by fixing bugs and implementing principle of least privileges for better security.
 \end{tightemize}
 \sectionsep
 
@@ -287,7 +285,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \section{Achievements}
-\vspace{10pt} % Hacky fix for awkward extra vertical space
+\vspace{8pt} % Hacky fix for awkward extra vertical space
     \begin{tightemize}
         \item \descript{All India Rank 630 \\ JEE Advanced 2016}
         \item \descript{All India Rank 2237 \\ JEE Mains 2016}
@@ -303,7 +301,7 @@
 
 \section{Skills}
 \subsection{Programming}
-    C/C++  \textbullet\ Golang  \textbullet\ Typescript \textbullet\
+    C/C++  \textbullet\ Typescript  \textbullet\ Golang \textbullet\
     python \textbullet\ bash  \textbullet\ x86 Assembly \textbullet{} Glib
 \sectionsep
 
@@ -322,16 +320,19 @@
 \section{Coursework}
 \vspace{10pt} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Secure Memory Systems ($i$)
-\item Security of Critical Infra. ($i$)
-\item Parallel Computing ($i$)
+\item Compiler Design ($i$)
+\item Malware Analysis and IDS ($i$)
+\item Computer Networks ($i$)
+\item Secure Memory Systems
+\item Security of Critical Infra.
+\item Parallel Computing
 \item Systems \& Cyber Security
 \item Operating Systems
-\item Blockchain Technology \& Applications
+\item Blockchain Tech. \& Applications
 \item Intro. to Machine Learning
 \item Database Systems
 \item Data Structures \& Algorithms
-\item Discrete Mathematics
+% \item Discrete Mathematics
 \item Software Engineering
 \end{tightemize}
 \sectionsep
