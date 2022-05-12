@@ -12,6 +12,12 @@ Can be compiled using :
 ```shell
 $ xelatex cv.tex
 ```
+### Dependencies for Ubuntu (20.04):
+
+```
+sudo apt-get install -y fonts-font-awesome latexmk texlive-xetex evince
+```
+
 ### Optional Dependencies for Real-Time Latex Compilation :
 
 * latexmk : `mkpdf` 
