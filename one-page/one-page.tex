@@ -104,26 +104,27 @@
 \location{Aug 2020 $-$ Present }
 \vspace{10pt} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Designed and developed a Tenant-agnostic Ads Platform from scratch to fetch Display and Sponsored Ads to various business units of Walmart.
-\item \textbf{Improved the p95 RTT} (round-trip-time) from \textbf{800ms to 200ms} after migration to Ads Platform while serving \textbf{6 million req/hr} using Spring WebFlux.
-\item Have full ownership of multiple microservices, deployed on Kubernetes and with e2e telemetry setup using Prometheus, Splunk, Grafana and Dynatrace.
+\item Designed and developed a tenant-agnostic Ads-Platform from scratch to fetch sponsored and display ads (OpenRTB compliant) to various business units of Walmart.
+\item \textbf{Improved the 95th percentile round-trip time} from \textbf{800ms to 200ms} after migration to Ads-Platform while serving \textbf{6 million req/hr} using Spring WebFlux.
+\item Have full ownership of multiple microservices, deployed on Azure compute, managed using Kubernetes and with e2e telemetry setup using \textbf{Prometheus, Splunk, Grafana, and Dynatrace}.
+\item Developed the Apollo-Federation subgraph server using Java-Springboot-GraphQL stack, \textbf{serving nearly 150 million ad requests per day}.
 \end{tightemize}
 \sectionsep
 
 \runsubsection{GNOME}
-\descript{| Google Summer of Code (GSoC) \boxedLink{Report}{https://msharma.in/gsoc\%202019/GSoC-Final-Report/}{3.6em}}
+\descript{| Google Summer of Code \boxedLink{Report}{https://msharma.in/gsoc\%202019/GSoC-Final-Report/}{3.6em}}
 \location{May 2019 $-$ Aug 2019 | Mentor: Ondřej Holý }
 % \vspace{\topsep} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-    \item \textbf{Improved build times by $\sim$ 45\%}, by porting libgdata from (\textit{autotools + make}) to (\textit{meson + ninja}) build system, by writing build files for compiling and linking a shared library consisting of 100+ objects.
-    \item Developed a new API for libgdata (C library for Google Drive), and fixed the copy, move, delete and mkdir operations in GVfs.
+    \item \textbf{Improved build times by $\sim$ 45\%}, by porting libgdata (C library for Google Drive) from \textit{autotools + make} to \textit{meson + ninja} build system, by writing build files for compiling and linking a shared library consisting of 100+ objects.
+    \item Developed a new API for libgdata, and fixed the copy, move, delete and mkdir operations in GVfs.
     % \item Developed a new API in C for libgdata (C library for Google Drive API), to support Properties Resource.
     % \item Developed a regression test-suite for the Google backend in GVfs which uses GIO operations, and is planned to be a part of Gitlab's CI system.
     % \item All the code is merged to be \textbf{shipped to millions of GNOME users} in its 3.36 stable release.
 \end{tightemize}
 \sectionsep
 
-\runsubsection{Walmart Labs}
+\runsubsection{Walmart}
 \descript{| Software Engineering Intern}
 \location{May 2019 $-$ July 2019 | Bengaluru, India}
 % \vspace{\topsep} % Hacky fix for awkward extra vertical space
@@ -131,20 +132,20 @@
     \item \textbf{Improved the number of concurrent users/hr by ~30\%} by developing REST APIs for the Service Orchestration Layer.
         % to create a \textbf{one-stop solution for 162 Microservices}, driving up concurrent users/hr significantly.
     % \item Helped migration from a monolithic Oracle ATG (Java based) system to a \textbf{Bulk-Head Design Pattern based architecture} in node.js.
-    \item Developed and published \textbf{"mozart-utils"} (an npm package containing utility code) to Walmart's internal Nexus Repository
+    \item Developed and published \textbf{mozart-utils}, an npm package containing utility code, to Walmart's internal Nexus Repository
     % \item Collaborated with the team to develop 20 endpoints for Sams Mexico, which were used during a high-traffic sale event, with 99.9+\% requests being served successfully.
 \end{tightemize}
 \sectionsep
 
-\runsubsection{EarlySalary}
-\descript{| Software Developer Intern}
-\location{May 2018 $-$ July 2018 | Pune, India}
-% \vspace{\topsep} % Hacky fix for awkward extra vertical space
-\begin{tightemize}
-	% \item Worked directly under the CTO to design APIs and Algorithms, to retrieve and automatically assign a new case to a Pickup Agency based upon its priority in a cluster.
-    \item Implemented centralized Authentication and Authorization, using JumpCloud’s DaaS \textbf{(LDAP)}.
-\end{tightemize}
-\sectionsep
+% \runsubsection{EarlySalary}
+% \descript{| Software Developer Intern}
+% \location{May 2018 $-$ July 2018 | Pune, India}
+% % \vspace{\topsep} % Hacky fix for awkward extra vertical space
+% \begin{tightemize}
+	% % \item Worked directly under the CTO to design APIs and Algorithms, to retrieve and automatically assign a new case to a Pickup Agency based upon its priority in a cluster.
+    % \item Implemented centralized authentication and authorization, using JumpCloud’s directory-as-a-service (LDAP).
+% \end{tightemize}
+% \sectionsep
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %     PROJECTS
@@ -276,7 +277,7 @@
 \section{Education}
 
 \subsection{IIT Kanpur}
-    \descript{B.Tech in Comp. Sci. \& Engg.}
+    \descript{B.Tech in Computer Science \& Engineering}
     % \textit{}
 \descript{Class of 2020: GPA: 7.0/10.0}
 \sectionsep
@@ -320,7 +321,7 @@
     Node.js \textbullet\ Kubernetes \textbullet{} GraphQL \textbullet\ Apollo Federation \textbullet\ MongoDB
 \sectionsep
 
-    \subsection{OSes \& Tools}
+    \subsection{Toolchain}
     MacOS \textbullet\ Linux \textbullet\ Windows \textbullet\ gdb \textbullet\ Valgrind \textbullet\ meson \textbullet\ Git \textbullet\ Vim
 \sectionsep
 
@@ -331,20 +332,20 @@
 \section{Coursework}
 \vspace{10pt} % Hacky fix for awkward extra vertical space
 \begin{tightemize}
-\item Compiler Design
 \item Malware Analysis and IDS
-\item Computer Networks
 \item Secure Memory Systems
 \item Security of Critical Infra.
-\item Parallel Computing
 \item Systems \& Cyber Security
+\item Compiler Design
+\item Parallel Computing
 \item Operating Systems
+\item Computer Networks
 \item Blockchain Tech. \& Applications
 \item Intro. to Machine Learning
 \item Database Systems
 \item Data Structures \& Algorithms
 % \item Discrete Mathematics
-\item Software Engineering
+% \item Software Engineering
 \end{tightemize}
 \sectionsep
 
